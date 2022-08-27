@@ -7,5 +7,17 @@
         <div>
             <h2>Home page for ML Apps</h2>
         </div>
+        <div>
+            <form method="post" action="{{url_for('predict')}}">
+                <input type="text" name="firstname" placeholder="Firstname">
+                <input type="text" name="lastname" placeholder="Lastname">
+                <button type="reset">Clear</button>
+                <button type="submit">Submit</button>
+                
+            </form>
+        </div>
+        <div>
+            <p>Your name was {{firstname}} and your surname is {{lastname}}</p>
+        </div>
     </body>
 </html>

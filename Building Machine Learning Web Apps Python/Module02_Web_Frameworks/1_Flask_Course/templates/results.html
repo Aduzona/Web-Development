@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Result of Users</title>
+    </head>
+    <body>
+        <div>
+            <h2>Results</h2>
+        </div>
+        <div>
+            <ul>
+                {% for user in userslist %}
+                <!--user.firstname: in our class, we stored it as firtname-->
+                <li>Firstname {{user.firstname}}</li>
+                <li>Lastname {{user.lastname}}</li>
+                
+            </ul>
+            {% endfor %}
+        </div>
+    </body>
+</html>
