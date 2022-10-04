@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>News Classifier</title>
+    </head>
+    <body>
+        <div>
+            <h2>News Classifier</h2>
+            <a href="{{url_for('index')}}">Refresh</a>
+        </div>
+
+        <div>
+            <form method="POST" action="{{url_for('predict')}}"> <!-- Route to our file-->
+                <textarea rows="10" cols="10" name="rawtext"></textarea>
+
+                <select name="modelchoice">
+                    <option selected>Select Model Type</option>
+                    <option value="nb">Naive Bayes</option>
+                    <option value="logit">Logistic Regression</option>
+                    <option value="rf">Random Forest</option>
+                </select>
+                <button type="reset">Clear</button>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div>
+            <h2>Original Text</h2>
+            {{rawtext}}
+        </div>
+
+        <div>
+            <h2>Prediction</h2>
+            {{final_result}}
+        </div>
+    </body>
+</html>

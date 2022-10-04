@@ -176,5 +176,7 @@ def main():
             st.subheader("Generate Word Cloud")
             text = new_df['Articles'].iloc[0]
             wordcloud =WordCloud().generate(text)
+            plt.imshow(wordcloud,interpolation='bilinear')
+
 if __name__=='__main__':
     main()
