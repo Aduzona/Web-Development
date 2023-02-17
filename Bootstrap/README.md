@@ -1,0 +1,13 @@
+* [Grid system](https://getbootstrap.com/docs/4.1/layout/grid/)
+* [Colors,Background Color and backgraound gradient for different classes](https://getbootstrap.com/docs/4.2/utilities/colors/)
+
+* [Styling Text](https://getbootstrap.com/docs/4.2/utilities/text/)
+* [Element Positioning Bootstrap’s positioning documentation](https://getbootstrap.com/docs/4.2/utilities/position)
+* [how these position are rendered on a webpage](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
+* [The Navigation Component](https://getbootstrap.com/docs/4.2/components/navs/)
+* [Bootstrap Button Component](https://getbootstrap.com/docs/4.2/components/buttons)
+* [Bootstrap Collapse document](https://getbootstrap.com/docs/4.2/components/collapse/)
+* [Bootstrap’s Navbar documentation](https://getbootstrap.com/docs/4.2/components/navbar/#supported-content)
+* [Bootstrap’s jumbotron documentation](https://getbootstrap.com/docs/4.2/components/jumbotron)
+* [Bootstrap’s card documentation](https://getbootstrap.com/docs/4.2/components/card/#example)
+* [Bootstrap has many carousel examples](https://getbootstrap.com/docs/4.2/components/carousel/)
