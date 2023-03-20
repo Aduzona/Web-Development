@@ -1,10 +1,5 @@
-import psycopg2
+from config import connect_db
 
-
-def connect_db():
-    connection = psycopg2.connect(host="localhost",port="5432",database="flaskaws",user="postgres",password="uvugaBaj21")
-    cursor = connection.cursor()
-    return connection,cursor
 
 '''
 cursor.execute("""
