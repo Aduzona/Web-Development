@@ -5,7 +5,7 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - 8000:8000
+      - 8001:5000
     volumes:
       - .:/app
     depends_on:
@@ -13,7 +13,7 @@ services:
     environment:
       - DB_HOST=db
       - DB_PORT=3306
-      - DB_NAME=admin
+      - DB_NAME=main
       - DB_USER=root
       - DB_PASSWORD=root
   db:
@@ -24,5 +24,5 @@ services:
     volumes:
       - .dbdata:/var/lib/mysql
     ports:
-      - 33066:3306
+      - 33067:3306
 
