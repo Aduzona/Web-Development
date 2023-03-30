@@ -17,12 +17,15 @@ services:
       - DB_USER=root
       - DB_PASSWORD=root
   db:
-    image: mysql:8.0  
+    image: mysql:8.0
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: main
+    command: mysqld --init-file /app/init.sql
     volumes:
       - .dbdata:/var/lib/mysql
+      - ./init.sql:/app/init.sql
     ports:
       - 33067:3306
 

@@ -1,3 +1,8 @@
+# Python Microservices
+Admin app with Django, and main app use Flask, they will communicate using Rabbitmq.
+
+![Python Microservice](Architecture.png)
+
 # Django App
 
 `django-cors-headers` is needed for frontend to access the backend.
