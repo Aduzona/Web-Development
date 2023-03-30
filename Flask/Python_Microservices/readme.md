@@ -1,5 +1,9 @@
 # Python Microservices
+
 Admin app with Django, and main app use Flask, they will communicate using Rabbitmq.
+In the Admin App, you can create products, while in main App, you can like the products.
+Liking a product in main app triggers event in rabbitmq, this should reflect in 
+Admin app indicating additional like for a product.
 
 ![Python Microservice](Architecture.png)
 
